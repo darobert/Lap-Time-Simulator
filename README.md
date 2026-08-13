@@ -129,7 +129,6 @@ This allows the model to be used for track-specific drivetrain setup studies.
 
 ## Example Results
 
-IMAGES
 
 
 ## Limitations
