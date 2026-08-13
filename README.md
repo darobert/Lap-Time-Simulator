@@ -127,9 +127,48 @@ The simulator identified an intermediate optimum, representing the trade-off bet
 
 This allows the model to be used for track-specific drivetrain setup studies.
 
-## Example Results
+## Example Simulation Results
+
+### Speed and Gear Selection
+
+The simulator generates a distance-based speed profile while selecting the gear that maximises available tractive force within the engine RPM limit.
+
+![Speed and Gear Selection](results/Speed%20and%20Gear.png)
+
+### Vehicle Acceleration Profile
+
+Longitudinal and lateral acceleration are calculated throughout the lap, showing acceleration zones, braking zones and lateral loading through corners.
+
+![Lateral and Longitudinal Acceleration](results/Lateral%20and%20Longitudinal%20Acceleration.png)
 
 
+## Sensitivity Analysis and Model Verification
+
+Parameter sweeps were performed to verify that the simulator responds consistently with expected vehicle dynamics behaviour.
+
+### Vehicle Mass Sensitivity
+
+Increasing vehicle mass produces a progressive increase in predicted lap time due to reduced acceleration performance and increased tyre loading.
+
+![Mass Sensitivity](results/Mass%20Sensitivity.png)
+
+### Tyre Grip Sensitivity
+
+Increasing the tyre friction coefficient increases available longitudinal and lateral tyre force, reducing predicted lap time.
+
+![Grip Sensitivity](results/Grip%20Sensitivity.png)
+
+### Aerodynamic Package Optimisation
+
+The aerodynamic package was varied to investigate the trade-off between increased downforce and increased aerodynamic drag. On a higher-speed track, the simulator identifies an intermediate optimum where the benefit of additional downforce is balanced against the straight-line drag penalty.
+
+![Aero Package Optimisation](results/Aero%20Package%20Optimisation.png)
+
+### Final Drive Optimisation
+
+The final-drive ratio was varied to determine the optimum compromise between increased wheel torque and reduced maximum vehicle speed.
+
+![Final Drive Optimisation](results/Final%20Drive%20Optimisation.png)
 
 ## Limitations
 
